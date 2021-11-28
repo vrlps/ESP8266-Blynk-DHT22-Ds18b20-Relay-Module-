@@ -1,5 +1,3 @@
-#define BLYNK_PRINT Serial
-
 #include <SPI.h>
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
@@ -8,11 +6,11 @@
 #include <DallasTemperature.h>
 #include <Adafruit_Sensor.h>
 
-
-
 char auth[] = ""; 
 char ssid[] = ""; 
-char pass[] = "";  
+char pass[] = "";
+
+#define BLYNK_PRINT Serial
 #define DHTPIN 2
 #define DHTTYPE DHT22
 #define ONE_WIRE_BUS 14
